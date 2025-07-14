@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Tracker</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script type="module" src="/src/script.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>💱 Currency Tracker</h1>
+
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span>Dark Mode</span>
+    </div>
+
+    <div class="selector">
+      <select id="fromCurrency"></select>
+      <span>➡️</span>
+      <select id="toCurrency"></select>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="amount" placeholder="Enter amount" value="1" min="0" />
+      <button id="swapBtn"><i class="fas fa-exchange-alt"></i> Swap</button>
+      <button id="refreshBtn"><i class="fas fa-sync-alt"></i> Refresh</button>
+    </div>
+
+    <div id="rateDisplay" class="fade-in">Exchange Rate: --</div>
+    <div id="loading">Fetching rate...</div>
+
+    <canvas id="rateChart" height="200"></canvas>
+
+    <footer>Made with 💖 by Vani Jain</footer>
+  </div>
+
+  <!-- ✅ Correct script import for Vite -->
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
