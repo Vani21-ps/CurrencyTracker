@@ -4,6 +4,11 @@ A sleek and responsive currency converter web app that fetches **real-time excha
 
 ---
 
+## 🌐 Live Demo  
+👉 [View Deployed App](https://currency-tracker-weld.vercel.app/)
+
+---
+
 ## 📸 Screenshots
 
 | 💡 Light Mode | 🌙 Dark Mode |
